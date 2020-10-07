@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>롯데택배 :: 회원가입 완료 페이지</title>
+</head>
+<body>
+    <h1>회원가입이 완료 되었습니다!</h1>
+    <p>
+        <b>생성된 유저 정보</b><br><br>
+        ID: {{ signup_user.username }}<br>
+        이름: {{ signup_user.profile.name }}<br>
+        연락처: {{ signup_user.profile.phone }}<br>
+        이메일: {{ signup_user.email }}<br>
+    </p>
+    <a href="{% url 'index' %}">메인화면으로 가기</a>
+</body>
+</html>
