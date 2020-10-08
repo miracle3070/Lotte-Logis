@@ -14,6 +14,7 @@ def signup(request):
         profile = Profile(
             user = user,
             name = request.POST['name'],
+            nickname = request.POST['nickname'],
             phone = request.POST['phone'],
             permission = int(request.POST['permission']),
         )
